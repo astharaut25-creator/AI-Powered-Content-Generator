@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>AI Content Generator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="container">
+    <h1>✨ AI Content Generator</h1>
+
+    <div class="card">
+      <h2>Ask Me Anything</h2>
+      <input type="text" id="question" placeholder="Ask anything...">
+      <button onclick="askAI()">Ask</button>
+      <p id="answer"></p>
+    </div>
+
+
+    <div class="card">
+      <h2>Quick Summarizer</h2>
+      <textarea id="text" placeholder="Paste text here..."></textarea>
+      <button onclick="summarize()">Summarize</button>
+      <p id="summary"></p>
+    </div>
+
+    
+    <div class="card">
+      <h2>Idea Spark</h2>
+      <input type="text" id="idea" placeholder="e.g. startup ideas">
+      <button onclick="getIdeas()">Generate Ideas</button>
+      <ul id="ideasList"></ul>
+    </div>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
